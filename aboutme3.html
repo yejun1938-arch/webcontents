@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Me - 이예준</title>
+        <style>
+            body {
+                background-color: aliceblue;
+                margin: 20px;
+                padding: 10px;
+            }
+
+            header {
+                border-bottom: 1px solid black;
+                padding-bottom: 10px;
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                color: brown;
+                text-align: center;
+            }
+
+            p {
+                font-family: "휴먼편지체", "Malgun Gothic", sans-serif;
+                font-size: 1em;
+                text-indent: 1em;
+                line-height: 1.6;
+            }
+
+            h2 {
+                color: blue;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+
+            nav ul {
+                border: 1px dashed black;
+                padding: 15px 20px;
+                list-style-type: none;
+                background-color: aliceblue;
+                display: block;
+                width: fit-content;
+                min-width: 300px;
+            }
+
+            nav ul .menu-title {
+                color: blue;
+                font-size: 1.25em;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+                margin-bottom: 10px;
+            }
+
+            nav ul li {
+                margin-bottom: 5px;
+                padding-left: 15px;
+                position: relative;
+            }
+
+            nav ul li:not(.menu-title)::before {
+                content: "▪";
+                position: absolute;
+                left: 0;
+                color: black;
+                font-size: 0.8em;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: black;
+            }
+            nav a:hover {
+                text-decoration: underline;
+                color: blue;
+            }
+
+            #interest ul {
+                list-style-type: none;
+                padding-left: 0;
+                font-family: "휴먼편지체", "Malgun Gothic", sans-serif;
+            }
+            #interest > ul > li {
+                font-weight: bold;
+                margin-top: 15px;
+                padding-left: 15px;
+                position: relative;
+            }
+            #interest > ul > li::before {
+                content: "•";
+                position: absolute;
+                left: 0;
+                color: black;
+            }
+            #interest ul ul {
+                padding-left: 25px;
+                font-weight: normal;
+            }
+            #interest ul ul li {
+                margin-top: 5px;
+                position: relative;
+            }
+            #interest ul ul li::before {
+                content: "o";
+                position: absolute;
+                left: -15px;
+                font-size: 0.8em;
+            }
+
+            .hobby-table {
+                border-collapse: collapse;
+                border: 1px solid #ccc;
+                background-color: aliceblue;
+            }
+            .hobby-table td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: center;
+                vertical-align: middle;
+            }
+            .hobby-table img {
+                width: 200px;
+                height: 130px;
+                object-fit: cover;
+                display: block;
+                margin: 0 auto;
+            }
+            .hobby-name {
+                font-family: sans-serif;
+                font-size: 0.9em;
+                padding-top: 5px;
+            }
+
+            .timetable {
+                border-collapse: collapse;
+                width: 100%;
+                max-width: 600px;
+                background-color: white;
+                text-align: center;
+            }
+            .timetable th, .timetable td {
+                border: 1px solid black;
+                padding: 8px;
+                height: 40px;
+            }
+            .timetable th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+            }
+            
+            .subject-prog {
+                background-color: #e6f2ff;
+                color: #004080;
+                font-weight: bold;
+                font-size: 0.9em;
+            }
+            .subject-science {
+                background-color: #f2e6ff;
+                color: #4b0082;
+                font-weight: bold;
+                font-size: 0.9em;
+            }
+            .subject-sw {
+                background-color: #e6fff2;
+                color: #006633;
+                font-weight: bold;
+                font-size: 0.9em;
+            }
+            .subject-internet {
+                background-color: #fff2e6;
+                color: #b35900;
+                font-weight: bold;
+                font-size: 0.9em;
+            }
+
+            footer {
+                background-color: orange;
+                border-radius: 10px;
+                border: 1px solid darkorange;
+                padding: 15px;
+                text-align: center;
+                margin-top: 40px;
+            }
+            footer p {
+                margin: 0;
+                text-indent: 0;
+                color: white;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <h1>About me</h1>
+        </header>
+
+        <p>
+            안녕하세요 저는 명지전문대 26학번 이예준입니다. 올해 대학교를 입학한 새내기입니다.
+            다양한 관심분야와 취미 활동을 하고 있습니다. 활기찬 하루 되세요~!
+        </p>
+
+        <nav>
+            <ul>
+                <li class="menu-title">목차</li>
+                <li><a href="#interest">관심분야</a></li>
+                <li><a href="#hobby">취미활동</a></li>
+                <li><a href="#time">강의시간표</a></li>
+                <li><a href="survey3.html" target="_blank">설문조사</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            
+            <article id="interest">
+                <h2>관심 분야</h2>
+                <ul>
+                    <li>인공지능
+                        <ul>
+                            <li>딥 러닝 / 추천 시스템 / 알고리즘 / 자연어 처리</li>
+                        </ul>
+                    </li>
+                    <li>웹 개발
+                        <ul>
+                            <li>프론트 엔드 / 백 엔드 / 데이터 베이스 / 데이터 분석 플랫폼</li>
+                        </ul>
+                    </li>
+                    <li>사이버보안
+                        <ul>
+                            <li>정보 보호 / 해킹 방어 / 암호화 기술</li>
+                        </ul>
+                    </li>
+                </ul>
+            </article>
+
+            <hr>
+
+            <article id="hobby">
+                <h2>취미 활동</h2>
+                <table class="hobby-table">
+                    <tr>
+                        <td><img src="이미지/배드민턴.jpg" alt="배드민턴"></td>
+                        <td><img src="이미지/게임.jpg" alt="게임"></td>
+                        <td><img src="이미지/음악감상.jpg" alt="음악감상"></td>
+                    </tr>
+                    <tr>
+                        <td class="hobby-name">배드민턴</td>
+                        <td class="hobby-name">게임</td>
+                        <td class="hobby-name">음악감상</td>
+                    </tr>
+                </table>
+            </article>
+
+            <hr>
+
+            <article id="time">
+                <h2>강의 시간표 (2025년 1학기)</h2>
+                <table class="timetable">
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>09</td><td></td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td></td>
+                            <td rowspan="3" class="subject-prog">프로그래밍 언어실습1<br>(공학관 603호)</td>
+                            <td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>11</td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>12</td><td></td><td></td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td></td><td></td><td></td>
+                            <td rowspan="3" class="subject-science">컴퓨터 과학개론<br>(공학관 608호)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td rowspan="2" class="subject-sw">SW개발문제 해결능력<br>(공학관 608호)</td>
+                            <td></td>
+                            <td rowspan="3" class="subject-internet">인터넷 콘텐츠<br>(공학관 603호)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>15</td><td></td><td></td>
+                        </tr>
+                        <tr>
+                            <td>16</td><td></td><td></td><td></td><td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+        </section>
+
+        <footer>
+            <hr>
+            <p><a href="survey3.html" id="survey-link">설문조사 하러 가기</a></p>
+            <p>Copyright 2026 by MYONGJI COLLEGE</p>
+        </footer>
+
+    </body>
+</html>
